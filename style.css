@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  border: 2px solid #333;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.taken {
+  cursor: not-allowed;
+  color: #555;
+}
+
+#result {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  min-height: 2rem;
+}
+
+#player-inputs input {
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin: 0 5px 10px 5px;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
